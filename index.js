@@ -37,7 +37,7 @@ app.get("/", (req, res) => {
 });
 
 async function run() {
-  await client.connect();
+  // await client.connect();
   await client.db("admin").command({ ping: 1 });
 
   const db = client.db("hireLoop");
